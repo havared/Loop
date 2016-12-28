@@ -1,0 +1,200 @@
+body {
+     font-family: 'Roboto' !important;
+     background-color: #deefe2;
+     overflow-x: hidden;
+}
+
+.backgroundColor{
+  background-color: #deefe2;
+}
+
+.customColorX{
+  color : #e24848;
+}
+
+.customColorY{
+  color : #34c150;
+}
+
+.activeLink{
+  color: #34c150 !important;
+}
+
+section {
+    display: block;
+}
+
+footer{
+  margin-top: 40px !important;
+}
+
+address a{
+  color: #e24848;
+  text-decoration: none;
+}
+
+footer section ul{
+  margin-left: -40px;
+}
+
+footer section li{
+  display: inline;
+  margin-right: 20px;
+}
+
+footer div ul{
+  margin-left: -110px;
+}
+
+footer div li{
+  display: inline;
+  margin-right: -50px;
+}
+
+section h2 { color: #34c150; font-size: 26px; letter-spacing: 1px; padding: 0 0 10px;}
+
+section li a{
+  color : #262626;
+}
+
+.footerP{
+  text-align: center;
+}
+.footerP p{
+  font-size: 15px;
+  text-align: left;
+  margin-left: 0px;
+}
+
+.borderBottom{
+  padding-top: 20px;
+  border-bottom: 1px solid #262626;
+}
+
+.copyright{
+  text-align: right;
+}
+
+.sizeIcon{
+  font-size: 17px !important;
+}
+
+.testimonal{
+  font-size: 18px;
+  font-style: italic;
+}
+
+.testimonal:before{
+  content:"“ ";
+  color : #e24848;
+}
+
+.testimonal:after{
+  content:" ”";
+  color : #34c150;
+}
+
+.testimonalRight{
+  text-align: right;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.nav-tabs > li.active > a,
+        .nav-tabs > li.active > a:hover,
+        .nav-tabs > li.active > a:focus{
+            background-color: #34c150;
+          }
+
+.nav-tabs > li > a:hover{
+  background-color: #262626;
+  color: #ffffff;
+}
+#marginLeft10 {
+  margin-left: 15px !important;
+}
+
+#demo {
+  margin-left: 15px !important;
+}
+
+#nav > .active > a {
+  color: #34c150;
+  background-color: #deefe2;
+}
+
+#nav li {
+  font-size: 16px;
+}
+
+.footerAlign{
+  text-align: center;
+  display: block;
+}
+
+.alignRight{
+  text-align: center;
+}
+
+.marginTop{
+  margin-top: 100px;
+}
+th{
+  text-align: center;
+}
+
+#addDiv{
+  margin-left: 20px;
+}
+
+table.responsive-table{
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 200px){
+    table.responsive-table{
+      box-shadow: none;
+    }
+    table.responsive-table thead{
+      display: none;
+    }
+    table.display th,
+    table.display td{
+      padding: .5em;
+    }
+
+    table.responsive-table td:nth-child(1):before{
+      content: 'ID';
+    }
+    table.responsive-table td:nth-child(2):before{
+      content: 'Thought';
+    }
+    table.responsive-table td:nth-child(3):before{
+      content: 'Time';
+    }
+    table.responsive-table td:nth-child(1),
+    table.responsive-table td:nth-child(2),
+    table.responsive-table td:nth-child(3){
+      padding-left: 25%;
+    }
+    table.responsive-table td:nth-child(1):before,
+    table.responsive-table td:nth-child(2):before,
+    table.responsive-table td:nth-child(3):before{
+      position: absolute;
+      left: .5em;
+      font-weight: bold;
+    }
+
+      table.responsive-table tr,
+      table.responsive-table td{
+          display: block;
+      }
+      table.responsive-table tr{
+          position: relative;
+          margin-bottom: 1em;
+          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+      }
+      table.responsive-table td{
+          border-top: none;
+      }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>::Loop::</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top backgroundColor">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><span class="customColorX">Loop</span></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+              <ul class="nav navbar-nav" id="nav">
+                <li><a onclick="onAdd()">Add</a></li>
+                <li><a href="#myCarousel">Thoughts</a></li>
+                <li><a href="#myCarousel">Profile</a></li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+    <div id="addDiv" class="marginTop">
+      <form onsubmit="addThought()">
+        <input type="text" id ="thoughtName" name="thoughtName" placeholder="A thought" autofocus>
+        <input type="text" id ="remindTime" placeholder="time to remind in minutes">
+        <input type="submit" value="Add">
+      </form>
+    </div>
+    <div id = "thoughts" class="marginTop col-sm-12 col-md-8">
+      <table id = "thoughtsTable" class="table-responsive">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Thoughts</th>
+            <th>Description in minutes</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Edit</h4>
+        </div>
+        <div class="modal-body">
+          <form onsubmit="editThought()">
+            <input type="text" id = "thoughtEditName">
+            <input type="text" id ="remindEditTime">
+            <input type="submit" value="Edit">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

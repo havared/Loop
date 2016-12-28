@@ -1,0 +1,7 @@
+{
+  "/thoughts/list": "/thoughts",
+  "/thoughts/get/:id": "/thoughts/:id",
+  "/thoughts/create": "/thoughts",
+  "/thoughts/update/:id": "/thoughts/:id",
+  "/thoughts/delete/:id": "/thoughts/:id"
+}
